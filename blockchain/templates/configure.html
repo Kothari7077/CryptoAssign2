@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blockchain Frontend</title>
+    <title>Pay Chain</title>
 
     <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/vendor/DataTables/css/datatables.min.css">
@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="/static/css/custom.css">
 
 </head>
-<body>
+<body style="background-color:#FFFFCC">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Blockchain Frontend</a>
+            <a href="#" class="navbar-brand">Pay Chain</a>
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -34,6 +34,8 @@
 
     <!-- Add nodes -->
     <div class="container">
+        <div style="color:black">
+
       <div class="row">
         <div class="col-lg-12">
           <div class="card-body">
@@ -41,17 +43,21 @@
             <p class="card-text">Enter a list of Blockchain node URLs separated by comma and click on "Add" button to add them to the list of nodes</p>
           </div>
         </div>
+          </div>
       </div>
     </div>
 
     <div class="container alert alert-secondary">
+
       <form id="node_form">
+
         <div class="row">
           <label class="col-sm-2">Node URLs:</label>
           <div class="col-sm-10">
             <input type="text" name="nodes" id="nodes" rows="2" class="form-control">
           </div>
-        </div>
+            </div>
+
 
         <br>
 
@@ -67,12 +73,15 @@
 
     <!-- List of nodes -->
     <div class="container">
+        <div style="color:black">
+
       <div class="row">
 
         <div class="col-lg-12">
           <div class="card-body">
-            <h4 class="card-title">This node can retrieve Blockchain data from the following nodes:</h4>
+            <h4 class="card-title">Following nodes Blockchain data can be retreived in this node:</h4>
           </div>
+            </div>
         </div>
 
         <div class="col-lg-12" id="list_nodes">
